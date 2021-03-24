@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Light and Sound Memory Game</h1>
+    <p>
+      <h2> Welcome to the game! (Read the rules!!!)</h2>
+      <h3>Rules:</h3>
+      <ul>
+        <li>Repeat back the pattern by pressing buttons</li>
+        <li>You have three tries to guess it right! (The Pattern will replay if you guess wrong)</li>
+        <li>The sound will get faster each turn!</li>
+        <li>You will have 120 seconds to guess all patterns (timer is displayed below)</li>
+      </ul>
+    </p>
+    <div id="timer">
+      <h1>
+        <p><u>Time:</u></p>
+        <p id="timerdisp">120</p>
+      </h1>
+    </div>
+  
+    <div id="tries">
+      <h1>
+        <p><u>Tries:</u></p>
+        <p id="trydisplay">3</p>
+      </h1>
+    </div>
+  
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+    
+    <button id="stopBtn" class="hidden" onclick="stopGame()"> 
+      Stop
+    </button>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"></button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"></button>
+    </div>
+  </body>
+</html>
+

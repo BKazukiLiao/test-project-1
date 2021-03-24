@@ -1,0 +1,95 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: Grey;
+  color: White;
+}
+
+h1 {
+  font-style: Bold;
+  font-family: verdana, arial, sans-serif;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#gameButtonArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+}
+
+#timer {
+  color: Red;
+}
+
+#tries {
+  color: Blue;
+}
+
+#button1 {
+  background: lightgreen;
+}
+
+#button2 {
+  background: lightblue;
+}
+
+#button3 {
+  background: pink;
+}
+
+#button4 {
+  background: lightyellow;
+}
+
+#button5 {
+  background: Gray;
+}
+
+#button6 {
+  background: magenta;
+}
+
+#button1:active,
+#button1.lit {
+  background-image: url("https://cdn.glitch.com/15329f3a-90f5-4156-9dcd-4e6c42010f89%2Fdoge.png?v=1616377219505");
+  background-size: 200px 200px;
+}
+
+#button2:active,
+#button2.lit {
+  background-image: url("https://cdn.glitch.com/15329f3a-90f5-4156-9dcd-4e6c42010f89%2Fcat.png?v=1616378924857");
+  background-size: 200px 200px;
+}
+
+#button3:active,
+#button3.lit {
+  background-image: url("https://cdn.glitch.com/15329f3a-90f5-4156-9dcd-4e6c42010f89%2Fpenguin.png?v=1616380065831");
+  background-size: 200px 200px;
+}
+
+#button4:active,
+#button4.lit {
+  background-image: url("https://cdn.glitch.com/15329f3a-90f5-4156-9dcd-4e6c42010f89%2Fdolphin.png?v=1616380207258");
+  background-size: 200px 200px;
+}
+
+#button5:active,
+#button5.lit {
+  background-image: url("https://cdn.glitch.com/15329f3a-90f5-4156-9dcd-4e6c42010f89%2Ffrog.png?v=1616380302983");
+  background-size: 200px 200px;
+}
+
+#button6:active,
+#button6.lit {
+  background-image: url("https://cdn.glitch.com/15329f3a-90f5-4156-9dcd-4e6c42010f89%2Fmouse.png?v=1616382780201");
+  background-size: 200px 200px;
+}
+.hidden {
+  display: none;
+}
